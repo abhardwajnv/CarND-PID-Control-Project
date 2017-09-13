@@ -15,8 +15,6 @@ The goals / steps of this project are the following:
 
 [//]: # (Image References)
 [image1]: ./output/img_pid.png
-[image2]: ./output_images/hog_feature.png
-[image3]: ./output_images/detect1.png
 
 ---
 ## [Rubric](https://review.udacity.com/#!/rubrics/824/view) Points
@@ -64,8 +62,7 @@ The equation looked like this :
 
 We can express this equation of control function mathamatically like this :
 
-**{\displaystyle u(t)=K_{\text{p}}e(t)+K_{\text{i}}\int _{0}^{t}e(\tau )\,d\tau +K_{\text{d}}{\frac {de(t)}{dt}},}**
-**u(t) = Kp*e(t) + Ki*intgral(e(tau))*d(tau) + Kd*(d(e(t))/dt)**
+**u(t) = Kp e(t) + Ki intgral(e(tau)) d(tau) + Kd (d(e(t))/dt)**
 
 Where, 
 * Kp, Ki & Kd denotes the coefficients for the proportional, integral and derivative terms, respectively.
@@ -74,7 +71,7 @@ Where,
 
 Below is a reference graph which show nature of PID Controller.
 
-![][image1]
+![PIDController][image1]
 
 ---
 
